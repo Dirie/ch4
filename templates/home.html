@@ -1,4 +1,5 @@
 <h1>Message board homepage</h1>
+{% csrf_token %}
 <ul>
 {% for post in post_list %}
 <li>{{ post.text }}</li>
